@@ -49,23 +49,26 @@ function App() {
   console.log(data);
 
   return <>
-    <main className="mt-[10%]">
+    <main className="mt-[2%]">
       <div className="grid flex items-center justify-center">
+        <div className="p-4 max-w-sm">
+          <div className="flex text-bold h-full p-8 flex-col flex items-center justify-center">
+            <p className='text-bold font-bold text-[38px]'>DooHuay</p>
+          </div>
+        </div>
         <input type="text" placeholder="กรอกเลข 6 หลัก" className="shadow appearance-none border rounded w-[100%] py-3 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline " />
-        <div className=" grid grid-flow-row-dense grid-cols-3 grid-rows-3 flex items-center justify-center">
 
-          {data.prizes.map((prize: Prize) => (
-            <div className="p-4 max-w-sm">
-              <div className="flex rounded-lg text-bold h-full bg-gray-400 p-8 flex-col">
+        {data.prizes.map((prize: Prize) => (
+          <div className="p-4 max-w-sm">
+            <div className="flex rounded-lg text-bold h-full bg-gray-400 p-8 flex-col">
               <h2 className='text-white text-bold ' key={prize.name}>{prize.name}</h2>
               <hr />
-                <div className="flex flex-col justify-between flex-grow">
-                  <p className='text-white' key={prize.id}>{prize.number.join(', ')}</p>
-                </div>
+              <div className="flex flex-col justify-between flex-grow">
+                <p className='text-white' key={prize.id}>{prize.number.join(', ')}</p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
     </main>

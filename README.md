@@ -1,6 +1,9 @@
-# React + TypeScript + Vite 
+# DooHuay Typescript
 
-# Layout is Hell don't clone!!!!!!!!!!!!!!!!!!!
+# API
+
+- [lotto.api.rayriffy.com](https://lotto.api.rayriffy.com/swagger#tag/default/get/latest)
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
